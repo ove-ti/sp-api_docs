@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AmazonEnvelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="amznenvelope.xsd">
+    <Header>
+        <DocumentVersion>1.01</DocumentVersion>
+        <MerchantIdentifier>A14JT182PLO6V6</MerchantIdentifier>
+    </Header>
+    <MessageType>Inventory</MessageType>
+    <Message>
+        <MessageID>1</MessageID>
+        <OperationType>Update</OperationType>
+        <Inventory>
+            <SKU>15BGP-AMY060-BLKWM</SKU>
+            <Quantity>0</Quantity>
+            <FulfillmentLatency>1</FulfillmentLatency>
+        </Inventory>
+    </Message>
+</AmazonEnvelope>
