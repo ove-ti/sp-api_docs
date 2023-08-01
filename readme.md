@@ -19,25 +19,25 @@ Information:
 4. **Register as a developer*:*
     - Go to: https://developer-docs.amazon.com/sp-api/docs/creating-and-configuring-iam-policies-and-entities
     1. Create AWS Account
-    - Register as a developer
-    - AWS, here we have to make the IAM user account
-    - You might want to login from Root account to make the IAM User account from there
+        - Register as a developer
+        - AWS, here we have to make the IAM user account
+        - You might want to login from Root account to make the IAM User account from there
     2. Create IAM User account
-    - Create the username
-    - provide user access to the AWS Management console. 
-    - Select I want to create IAM user
-    - give it a password 
-    - give it permissions
-    - download the csv containing credentials
-    - Now sign in as the IAM user
-    - Create an access key for this user
-    - Once created download the csv file with the access key and the secret access key
+        - Create the username
+        - provide user access to the AWS Management console. 
+        - Select I want to create IAM user
+        - give it a password 
+        - give it permissions
+        - download the csv containing credentials
+        - Now sign in as the IAM user
+        - Create an access key for this user
+        - Once created download the csv file with the access key and the secret access key
     3. Create the IAM Policy:
-    - Sign in to the AWS Management Console and then open the IAM Console
-    - on the navigation pane choose policies, if first time choose Get Started
-    - Create Policy 
-    - Choose the JSON tab. 
-    - and paste the following code:
+        - Sign in to the AWS Management Console and then open the IAM Console
+        - on the navigation pane choose policies, if first time choose Get Started
+        - Create Policy 
+        - Choose the JSON tab. 
+        - and paste the following code:
 
     ```json
       {
@@ -53,22 +53,22 @@ Information:
       ```
     - Give you policy a name and a Description
     4. **Create the IAM Role**
-    - on the AWS Management Console, on the IAM Console
-    - go on the Roles pane, and choose Create role
-    - On the Select Trusted entity page, choose AWS account and select in case the IAM user is on the same account then This account 
-    - give the role a name 
+        - on the AWS Management Console, on the IAM Console
+        - go on the Roles pane, and choose Create role
+        - On the Select Trusted entity page, choose AWS account and select in case the IAM user is on the same account then This account 
+        - give the role a name 
     5. **Add an AWS STS policy to your IAM user**
-    - Again find the IAM user
-    - where it says Add permission, choose Create Inline policy 
-    - On service choose STS
-    - Under actions Write and AssumeRole
-    - Under resources chooose Add ARNs
-    - give a name to the policy
+        - Again find the IAM user
+        - where it says Add permission, choose Create Inline policy 
+        - On service choose STS
+        - Under actions Write and AssumeRole
+        - Under resources chooose Add ARNs
+        - give a name to the policy
     6. **Now you can create the application**:
-    - on the seller central site create a new application
-    - give it a name 
-    - as API type give SP API
-    - IAM ARN, go on AWS and under **Roles** select the one that contains arn
+        - on the seller central site create a new application
+        - give it a name 
+        - as API type give SP API
+        - IAM ARN, go on AWS and under **Roles** select the one that contains arn
  
 ## Importanto to have to use in python:
 
