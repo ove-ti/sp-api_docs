@@ -52,19 +52,19 @@ Information:
     } 
       ```
     - Give you policy a name and a Description
-    4. Create the IAM Role
+    4. **Create the IAM Role**
     - on the AWS Management Console, on the IAM Console
     - go on the Roles pane, and choose Create role
     - On the Select Trusted entity page, choose AWS account and select in case the IAM user is on the same account then This account 
     - give the role a name 
-    5. Add an AWS STS policy to your IAM user 
+    5. **Add an AWS STS policy to your IAM user**
     - Again find the IAM user
     - where it says Add permission, choose Create Inline policy 
     - On service choose STS
     - Under actions Write and AssumeRole
     - Under resources chooose Add ARNs
     - give a name to the policy
-    6. Now you can create the application:
+    6. **Now you can create the application**:
     - on the seller central site create a new application
     - give it a name 
     - as API type give SP API
